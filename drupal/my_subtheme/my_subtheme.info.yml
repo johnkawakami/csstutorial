@@ -1,0 +1,7 @@
+name: My Subtheme
+type: theme
+base theme: bartik
+description: A subtheme that changes one style.
+core: 8.x 
+libraries:
+  - my_subtheme/global-styling
