@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            .foo {
+                font-size: 30px;
+                cursor: pointer;
+                transition-property: font-size color;
+                transition-duration: 1s;
+            }
+            .foo:active {
+                color: red;
+                font-size: 100px;
+            }
+            .foo:hover {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="foo">push to grow</div>
+        <p>move the mouse off the letters to see a color change.</p>
+    </body>
+</html>

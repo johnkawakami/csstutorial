@@ -1,0 +1,10 @@
+@media print {
+    * {
+        background-color: default;
+    }
+}
+@media screen (min-width: 768px;) {
+    SIDEBAR {
+        float: right;
+    }
+}

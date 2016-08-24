@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            #button {
+                border: 1px solid blue;
+                border-radius: 5px;
+                padding: 10px;
+                background-color: yellow !important;
+                background-color: green;
+        </style>
+    </head>
+    <body>
+        <p id="button">This demonstrates that 
+            Javascript can override 
+            !important in the stylesheet. Click me.</p>
+        <p>Notice that the background is yellow, not 
+            green. Look at the sources to see that 
+            !important is forcing the yellow.</p>
+        <p>Then notice that clicking will turn it red.</p>
+        <script>
+            el = document.getElementById('button');
+            el.onclick = function(evt) {
+                el.style.cssText = "background-color:red !important";
+            };
+        </script>
+    </body>
+</html>
+
