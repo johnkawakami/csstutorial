@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            @keyframes roll {
+                from { margin-left: 0; }
+                to { margin-left: 500px; }
+            }
+            div {
+                animation-name: roll;
+                animation-duration: 10s;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="a">x</div>
+        <div id="b">y</div>
+        <p>This demonstrates
+            how Javascript style changes are overridden by
+            CSS animations.  The CSS animation overrides
+            the Javascript code, which slowly moves the X
+            to the right.
+        </p>
+        <script>
+            // This javascript code changes margin-left
+            // on #a, moving it slowly to the right
+            // and conflicts with the CSS animation.
+            x = 0;
+            el = document.getElementById('a');
+            window.setInterval(function () {
+                el.style.marginLeft = x + 'px';
+                x = x + 1;
+            }, 100);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            @keyframes roll {
+                from { margin-left: 0; }
+                to { margin-left: 500px; }
+            }
+            div {
+                animation-name: roll;
+                animation-duration: 5s;
+            }
+            #a {
+                /* Uncomment line below to suppress animation
+                   of the #a element
+                */
+                margin-left: 0 !important; 
+            }
+        </style>
+    </head>
+    <body>
+        <div id="a">X</div>
+        <div id="b">y</div>
+        <p>This demonstrates how an !important
+            declaration can prevent an element from
+            being animated.
+        </p>
+    </body>
+</html>
