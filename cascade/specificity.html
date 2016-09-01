@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            #foobar { color: red; }
+            .bar { color: blue; }
+            .glop { color: purple; }
+            #foobar { color: green; }
+        </style>
+    </head>
+    <body>
+        <p class="bar">blue</p>
+
+        <p class="bar glop">purple</p>
+
+        <p class="glop bar">purple</p>
+
+        <p class="bar" id="foobar">green</p>
+
+        <p class="bar" id="foobar" style="color:magenta">magenta</p>
+
+        <!-- note that this is bad HTML because the ID is used twice -->
+    </body>
+</html>
+

@@ -1,0 +1,21 @@
+body {
+    font-size: 22px;
+}
+
+a[href*="/facebook.com"]:after { 
+    content: url(Facebook-48.png); 
+    vertical-align: middle; 
+}
+a[href*="/twitter.com"]:after  { 
+    content: url(Twitter-48.png); 
+    vertical-align: middle; 
+}
+a[href$=".pdf"]:before { 
+    content: url(PDF2-48.png); 
+    vertical-align: middle; 
+}
+a[href$=".mp4"]:before { 
+    content: url(VideoFile-48.png); 
+    vertical-align: middle; 
+}
+

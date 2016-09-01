@@ -1,0 +1,7 @@
+This is an example of source
+code that is from the book's
+GitHub repository. There are
+two links to the right of the
+filename, above. "www" links
+to a copy on a website, and
+"gh" links to the repo.
