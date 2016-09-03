@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <style>
+        .widget { 
+            border: 1px solid blue; 
+        }
+        .widget_heading { 
+            border: 1px solid green;
+        }
+        .widget_footer { 
+            border: 1px solid orange;
+        }
+        .widget__warning { 
+            background-color: white; 
+            border: 1px solid black; 
+        }
+        .widget__warning--red { 
+            background-color: red; 
+        }
+        </style>
+    </head>
+    <body>
+        <div class="widget">
+            <div class="widget__heading">...</div>
+            <div class="widget__warning">...</div>
+            <div class="widget__footer">...</div>
+        </div>    
+        <button onclick="document.querySelector('.widget__warning').classList.add('widget__warning--red')">click</button>
+    </body>
+</html>
